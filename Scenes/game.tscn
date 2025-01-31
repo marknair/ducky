@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dc1xypge03q4m"]
+
+[ext_resource type="Texture2D" uid="uid://cd8f5w5q17v83" path="res://Assets/wall_tiled.png" id="1_dg6kq"]
+[ext_resource type="PackedScene" uid="uid://b80anhlckv3q4" path="res://Scenes/ship.tscn" id="2_vah4d"]
+[ext_resource type="PackedScene" uid="uid://dlp54pik6sfrx" path="res://Scenes/bunny.tscn" id="3_4tsp2"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Background" type="TextureRect" parent="."]
+offset_left = -6145.0
+offset_top = -4120.0
+offset_right = 6360.0
+offset_bottom = 4990.0
+texture = ExtResource("1_dg6kq")
+stretch_mode = 1
+
+[node name="Bunny2" parent="." instance=ExtResource("3_4tsp2")]
+position = Vector2(-298, -114)
+
+[node name="Bunny" parent="." instance=ExtResource("3_4tsp2")]
+position = Vector2(214, 115)
+
+[node name="Ship" parent="." instance=ExtResource("2_vah4d")]

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dlp54pik6sfrx"]
+
+[ext_resource type="Texture2D" uid="uid://di7wagkvbjnig" path="res://Assets/powerup_bunny.png" id="1_y50hg"]
+
+[node name="Bunny" type="Sprite2D"]
+texture = ExtResource("1_y50hg")
